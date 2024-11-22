@@ -9,7 +9,7 @@ const pool = new Pool({
     user: 'postgres', // Substitua pelo seu usuário do PostgreSQL (verifique no seu computador na hora da prova!)
     host: 'localhost',
     database: 'tarefasKanban', // Nome da sua database
-    password: '12345', // Substitua pela sua senha
+    password: 'senai', // Substitua pela sua senha
     port: 5432, // Porta padrão do PostgreSQL
 });
 

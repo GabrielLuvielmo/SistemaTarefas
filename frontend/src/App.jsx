@@ -19,7 +19,7 @@ function App() {
     email: '',
   });
 
-  const filtroTarefasPorStatus = (status) => tarefas.filter(tarefa => tarefa.status === status);
+  const filtroTarefasPorStatus = (status) => Array.isArray(tarefas) ? tarefas.filter(tarefa => tarefa.status === status): [];
 
   function adicionarTarefa() {
     setIsAddingTarefa(true);
@@ -163,7 +163,7 @@ function App() {
             <button onClick={() => setIsAddingTarefa(false)}>Cancelar</button>
           </div>
         </div>
-      )}
+      )};
 
       {isAddingUsuario && (
         <div className="modal">
